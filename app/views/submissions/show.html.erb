@@ -1,0 +1,30 @@
+<h1>Submission #<%= @submission.id %></h1>
+
+<div>
+  <strong>Student</strong>:<br />
+  <p><%= @submission.student.name %></p>
+</div>
+<div>
+  <strong>Quiz</strong>:<br />
+  <p><%= @submission.quiz.name %></p>
+</div>
+<div>
+  <strong>Question 1</strong>:<br />
+  <div><%= @submission.quiz.question_1 %></div>
+  <strong>Your answer</strong>:<br />
+  <p><%= @submission.answer_1 %></p>
+</div>
+<div>
+  <strong>Question 2</strong>:<br />
+  <div><%= @submission.quiz.question_2 %></div>
+  <strong>Your answer</strong>:<br />
+  <p><%= @submission.answer_2 %></p>
+</div>
+
+<div>
+  <strong>Score</strong>:<br />
+  <p><%= @submission.score %></p>
+</div>
+
+<a href="/submissions/<%= @submission.id %>/edit">Edit</a> |
+<a href="/submissions/<%= @submission.id %>/destroy">Destroy</a>

@@ -1,0 +1,29 @@
+<h1>Editing Submission #<%= @submission.id %></h1>
+
+<form action="/submissions/<%= @submission.id %>/update">
+  <div>
+    <label for="student_id">student_id</label><br />
+    <input id="student_id" name="student_id" value="<%= @submission.student_id  %>" type="text" />
+  </div>
+  <div>
+    <label for="quiz_id">quiz_id</label><br />
+    <input id="quiz_id" name="quiz_id" value="<%= @submission.quiz_id  %>" type="text" />
+  </div>
+  <div>
+    <label for="answer_1">answer_1</label><br />
+    <input id="answer_1" name="answer_1" value="<%= @submission.answer_1  %>" type="text" />
+  </div>
+  <div>
+    <label for="answer_2">answer_2</label><br />
+    <input id="answer_2" name="answer_2" value="<%= @submission.answer_2  %>" type="text" />
+  </div>
+  <div>
+    <label for="score">score</label><br />
+    <input id="score" name="score" value="<%= @submission.score  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+

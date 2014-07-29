@@ -1,0 +1,49 @@
+<h1>Quizzes</h1>
+
+<p><a href="/new_quiz">Add a New Quiz</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Teacher</th>
+      <th>Name</th>
+      <th>Question 1</th>
+      <th>Q1 option 1</th>
+      <th>Q1 option 2</th>
+      <th>Q1 option 3</th>
+      <th>Answer 1</th>
+      <th>Question 2</th>
+      <th>Q2 option 1</th>
+      <th>Q2 option 2</th>
+      <th>Q2 option 3</th>
+      <th>Answer 2</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @quizzes.each do |quiz| %>
+    <tr>
+          <td><%= quiz.teacher_id %></td>
+          <td><%= quiz.name %></td>
+          <td><%= quiz.question_1 %></td>
+          <td><%= quiz.q1_option_1 %></td>
+          <td><%= quiz.q1_option_2 %></td>
+          <td><%= quiz.q1_option_3 %></td>
+          <td><%= quiz.answer_1 %></td>
+          <td><%= quiz.question_2 %></td>
+          <td><%= quiz.q2_option_1 %></td>
+          <td><%= quiz.q2_option_2 %></td>
+          <td><%= quiz.q2_option_3 %></td>
+          <td><%= quiz.answer_2 %></td>
+          <td><a href="/quizzes/<%= quiz.id %>">Show</a>
+        </td>
+      <td><a href="/quizzes/<%= quiz.id %>/edit">Edit</a></td>
+      <td><a href="/quizzes/<%= quiz.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

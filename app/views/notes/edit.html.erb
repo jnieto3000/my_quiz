@@ -1,0 +1,17 @@
+<h1>Editing Note #<%= @note.id %></h1>
+
+<form action="/notes/<%= @note.id %>/update">
+  <div>
+    <label for="student_id">student_id</label><br />
+    <input id="student_id" name="student_id" value="<%= @note.student_id  %>" type="text" />
+  </div>
+  <div>
+    <label for="contents">contents</label><br />
+    <input id="contents" name="contents" value="<%= @note.contents  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+

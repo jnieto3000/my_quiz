@@ -1,0 +1,57 @@
+<h1>Editing Quiz #<%= @quiz.id %></h1>
+
+<form action="/quizzes/<%= @quiz.id %>/update">
+  <div>
+    <label for="teacher_id">teacher_id</label><br />
+    <input id="teacher_id" name="teacher_id" value="<%= @quiz.teacher_id  %>" type="text" />
+  </div>
+  <div>
+    <label for="name">name</label><br />
+    <input id="name" name="name" value="<%= @quiz.name  %>" type="text" />
+  </div>
+  <div>
+    <label for="question_1">question_1</label><br />
+    <input id="question_1" name="question_1" value="<%= @quiz.question_1  %>" type="text" />
+  </div>
+  <div>
+    <label for="q1_option_1">q1_option_1</label><br />
+    <input id="q1_option_1" name="q1_option_1" value="<%= @quiz.q1_option_1  %>" type="text" />
+  </div>
+  <div>
+    <label for="q1_option_2">q1_option_2</label><br />
+    <input id="q1_option_2" name="q1_option_2" value="<%= @quiz.q1_option_2  %>" type="text" />
+  </div>
+  <div>
+    <label for="q1_option_3">q1_option_3</label><br />
+    <input id="q1_option_3" name="q1_option_3" value="<%= @quiz.q1_option_3  %>" type="text" />
+  </div>
+  <div>
+    <label for="answer_1">answer_1</label><br />
+    <input id="answer_1" name="answer_1" value="<%= @quiz.answer_1  %>" type="text" />
+  </div>
+  <div>
+    <label for="question_2">question_2</label><br />
+    <input id="question_2" name="question_2" value="<%= @quiz.question_2  %>" type="text" />
+  </div>
+  <div>
+    <label for="q2_option_1">q2_option_1</label><br />
+    <input id="q2_option_1" name="q2_option_1" value="<%= @quiz.q2_option_1  %>" type="text" />
+  </div>
+  <div>
+    <label for="q2_option_2">q2_option_2</label><br />
+    <input id="q2_option_2" name="q2_option_2" value="<%= @quiz.q2_option_2  %>" type="text" />
+  </div>
+  <div>
+    <label for="q2_option_3">q2_option_3</label><br />
+    <input id="q2_option_3" name="q2_option_3" value="<%= @quiz.q2_option_3  %>" type="text" />
+  </div>
+  <div>
+    <label for="answer_2">answer_2</label><br />
+    <input id="answer_2" name="answer_2" value="<%= @quiz.answer_2  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+

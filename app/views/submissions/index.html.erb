@@ -1,0 +1,35 @@
+<h1>Submissions</h1>
+
+<p><a href="/new_submission">Add a New Submission</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Student</th>
+      <th>Quiz</th>
+      <th>Answer 1</th>
+      <th>Answer 2</th>
+      <th>Score</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @submissions.each do |submission| %>
+    <tr>
+          <td><%= submission.student_id %></td>
+          <td><%= submission.quiz_id %></td>
+          <td><%= submission.answer_1 %></td>
+          <td><%= submission.answer_2 %></td>
+          <td><%= submission.score %></td>
+          <td><a href="/submissions/<%= submission.id %>">Show</a>
+        </td>
+      <td><a href="/submissions/<%= submission.id %>/edit">Edit</a></td>
+      <td><a href="/submissions/<%= submission.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

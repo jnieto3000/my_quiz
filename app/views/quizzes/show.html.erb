@@ -1,0 +1,53 @@
+<h1>Quiz #<%= @quiz.id %></h1>
+
+<div>
+  <strong>Teacher</strong>:<br />
+  <p><%= @quiz.teacher_id %></p>
+</div>
+<div>
+  <strong>Name</strong>:<br />
+  <p><%= @quiz.name %></p>
+</div>
+<div>
+  <strong>Question 1</strong>:<br />
+  <p><%= @quiz.question_1 %></p>
+</div>
+<div>
+  <strong>Q1 option 1</strong>:<br />
+  <p><%= @quiz.q1_option_1 %></p>
+</div>
+<div>
+  <strong>Q1 option 2</strong>:<br />
+  <p><%= @quiz.q1_option_2 %></p>
+</div>
+<div>
+  <strong>Q1 option 3</strong>:<br />
+  <p><%= @quiz.q1_option_3 %></p>
+</div>
+<div>
+  <strong>Answer 1</strong>:<br />
+  <p><%= @quiz.answer_1 %></p>
+</div>
+<div>
+  <strong>Question 2</strong>:<br />
+  <p><%= @quiz.question_2 %></p>
+</div>
+<div>
+  <strong>Q2 option 1</strong>:<br />
+  <p><%= @quiz.q2_option_1 %></p>
+</div>
+<div>
+  <strong>Q2 option 2</strong>:<br />
+  <p><%= @quiz.q2_option_2 %></p>
+</div>
+<div>
+  <strong>Q2 option 3</strong>:<br />
+  <p><%= @quiz.q2_option_3 %></p>
+</div>
+<div>
+  <strong>Answer 2</strong>:<br />
+  <p><%= @quiz.answer_2 %></p>
+</div>
+
+<a href="/quizzes/<%= @quiz.id %>/edit">Edit</a> |
+<a href="/quizzes/<%= @quiz.id %>/destroy">Destroy</a>
